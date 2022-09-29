@@ -6,7 +6,7 @@ body {
     height: 2000px;
 }
 
-.section{
+.section1{
     border:2px solid red;
     background-image: url("images/glenn-carstens-peters-P1qyEf1g0HU-unsplash\ \(1\).jpg");
     background-repeat: no-repeat;
@@ -19,7 +19,33 @@ body {
     display:grid;
     grid-template-rows: 1fr 8fr;
 }
+.section2{
+    border:2px solid red;
+    background-image: url("images/pramod-tiwari-S1R68gKE61A-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin:0px;
+    padding:0px;
+  justify-content: center;
+  align-items: center;
+    min-width: 100vw;
+    min-height: 100vh;
+    display:grid;
+    grid-template-columns: 2fr 3fr;
+}
+.section3{
+    border:2px solid red;
+    background-image: url("images/pinkback.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin:0px;
+    padding:0px;
 
+    min-width: 100vw;
+    min-height: 100vh;
+    display:grid;
+    grid-template-rows: 1fr 8fr;
+}
 
 #navbar {
     display: flex;
@@ -100,5 +126,44 @@ h1{
     position: relative;
     left:-199px;
 }
-
+.container1 img{
+    margin: 0px 50px;
+    background-repeat: no-repeat;
+    background-position: center right;
+    width: 400px;
+    position: relative;
+    top: 62px;
+    right: -137px;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    border: 13px outset rgb(201 68 68);
+    border-radius: 37px;
+}
+.container2{
+    margin: 0px 53px;
+    font-family: 'Poppins', sans-serif;
+    height: 367px;
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    width: 544px;
+    /* FONT-WEIGHT: 100; */
+    padding: 0px 0px;
+    /* flex-basis: fit-content; */
+    /* max-width: fit-content; */
+    /* min-block-size: auto; */
+}
+.container2 p{
+    font-size: 20px;
+}
+.container1{
+    align-self: center;
+    justify-self: end;
+}
 
