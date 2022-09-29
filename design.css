@@ -1,0 +1,104 @@
+body {
+    background-color: rgb(240, 243, 247);
+    margin: 0px;
+    padding: 0px;
+    color: rgb(244, 237, 237);
+    height: 2000px;
+}
+
+.section{
+    border:2px solid red;
+    background-image: url("images/glenn-carstens-peters-P1qyEf1g0HU-unsplash\ \(1\).jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin:0px;
+    padding:0px;
+
+    min-width: 100vw;
+    min-height: 100vh;
+    display:grid;
+    grid-template-rows: 1fr 8fr;
+}
+
+
+#navbar {
+    display: flex;
+    border: 2px solid rgb(28, 26, 26);
+    padding: 0px 206px;
+    margin: 0px 0px;
+    justify-content: space-between;
+    align-items: center;
+    
+    background-color: transparent;
+    /* box-shadow: -5px -6px 18px 11px #93a9a9; */
+    
+}
+#navbar ul{
+    display: flex;
+    width: 600px;
+    /* position: absolute; */
+    /* left: 700px; */
+    flex-direction: row;
+    justify-content: flex-end;
+    /* align-items: center; */
+    border: 2px solid rgb(28, 26, 26);
+    padding: 10px;
+    margin: 1px 50px;
+    color: #c3bfba;
+}
+#navbar img{
+    width: 175px;
+    position: relative;
+    left:-45px;
+    height: 50px;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+#navbar ul li {
+    margin: 15px;
+    color: #c3bfba;
+}
+a{
+    text-decoration: none;
+
+    font-weight: 700;
+}
+.container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    
+    
+}
+.specialname{
+    font-family: "Poppins",sans-serif;
+    color: #fb0a39bf;
+    text-shadow: 2px 2px 4px #303132;
+}
+.button{
+    display: inline-block;
+    padding: 10px 30px;
+    color: crimson;
+    
+    text-transform: uppercase;
+    font-size: 2rem;
+    border: 2px solid crimson;
+    letter-spacing: .3rem;
+    margin-top: 30px;
+    transition: .35s ease-in-out background-color;
+    border-radius: 14% 0%;
+    background: transparent;
+}
+.intro{
+    position: relative;
+    left:-199px;
+}
+
+
