@@ -4,6 +4,7 @@
 }
 html{
     font-size:62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -69,19 +70,19 @@ body {
 
 #navbar {
     display: flex;
-    /* border: 2px solid rgb(28, 26, 26); */
-    /* position: -webkit-sticky; */
-    position: sticky;
-    top: 0;
-    height :10rem;
+    position: fixed;
+    top: 0px;
+    width: 100vw;
+    height: 5rem;
     padding: 0.8rem 0.9rem;
-    margin: 0px 0px;
+    margin: 0px;
     justify-content: space-between;
     align-items: center;
-    background-color: transparent;
-    /* box-shadow: -5px -6px 18px 11px #93a9a9; */
+    background-color: crimson;
+    z-index: 1;
     
 }
+
 #navbar ul{
     display: flex;
     width: 600px;
@@ -98,7 +99,7 @@ body {
 #navbar img{
     width: 175px;
     position: relative;
-    left:-17rem;
+    left:0rem;
     height: 5rem;
     margin: 0px;
     padding: 0px;
@@ -139,8 +140,8 @@ h1{
 .specialname{
     font-family: "Poppins",sans-serif;
     color: #fb0a39bf;
-    font-size: 3rem;
-    text-shadow: 2px 2px 4px #303132;
+    font-size: 3.8rem;
+    text-shadow: 2px 2px 4px;
 }
 .button{
     display: inline-block;
@@ -165,6 +166,7 @@ h1{
     position: relative;
     left:-19.9rem;
     font-size: 2rem;
+    top:9rem;
 }
 .container1 img{
     margin: 0px 5rem;
