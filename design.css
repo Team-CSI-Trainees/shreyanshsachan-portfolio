@@ -76,7 +76,7 @@ body {
     height: 5rem;
     padding: 0.8rem 0.9rem;
     margin: 0px;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     background-color: crimson;
     z-index: 1;
@@ -99,7 +99,7 @@ body {
 #navbar img{
     width: 175px;
     position: relative;
-    left:0rem;
+    left:-20rem;
     height: 5rem;
     margin: 0px;
     padding: 0px;
@@ -109,7 +109,7 @@ body {
 
 
 #navbar ul li {
-    margin: 2rem;
+    margin: 1rem 3.5rem;
     color: #dcdbd9;
     font-size: 1.5rem;
     font-family: 'Poppins', sans-serif;
@@ -139,28 +139,29 @@ h1{
 }
 .specialname{
     font-family: "Poppins",sans-serif;
-    color: #fb0a39bf;
+    color: crimson;
     font-size: 3.8rem;
-    text-shadow: 2px 2px 4px;
+    text-shadow: 2px 2px 1px darkslategrey;
 }
 .button{
     display: inline-block;
     padding: 1rem 3rem;
-    color: crimson;
-    
+    border:2px solid white;
+    color:white;
+    background-color: crimson;
     text-transform: uppercase;
     font-size: 2rem;
-    border: 2px solid crimson;
+   
     letter-spacing: .3rem;
     margin-top: 3rem;
     transition: .35s ease-in-out background-color;
     border-radius: 14% 0%;
-    background: transparent;
+    
 }
 .button:hover{
-    color:white;
-    background-color: crimson;
-
+    border: 2px solid crimson;
+    color: crimson;
+    background: transparent;
 }
 .intro{
     position: relative;
@@ -236,7 +237,7 @@ h1{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    flex-wrap: wrap;
   }
   .box{
     width:30rem;
@@ -280,7 +281,7 @@ h1{
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    margin:20px 0px 20px 0px;
+    margin:20px 0px 0px 0px;
     padding:0px;
     justify-content: center;
     align-items: center;
@@ -335,7 +336,8 @@ h1{
   
   .screen-body-item {
     flex: 1;
-    padding: 50px;
+    padding: 42px;
+    
   }
   
   .screen-body-item.left {
@@ -359,6 +361,7 @@ h1{
     margin-top: auto;
     font-size: 8px;
     color: #888;
+    background-color: #9fa8f7;
   }
   
   .app-form-group {
@@ -376,7 +379,7 @@ h1{
   }
   .app-form-group.buttons button{
     font-size: 25px;
-    text-shadow: 2px 2px 2px rgb(154, 151, 151);
+    text-shadow: 2px 2px 2px rgb(52 37 37);
   }
   
   .app-form {
@@ -385,15 +388,19 @@ h1{
     background: none;
     border: none;
     border-bottom: 1px solid #666;
-    color: rgb(250, 245, 245);
-    font-size: 14px;
+    color: rgb(248 245 245);
+    font-size: 19px;
     text-transform: uppercase;
     outline: none;
     transition: border-color .2s;
+    font-weight: 900;
+    font-family: 'Poppins';
   }
   
   .app-form::placeholder {
     color: rgb(244, 235, 235);
+    background-color: rgba(61, 59, 67, 0.636);
+    font-family: 'Poppins';
   }
   
   .app-form:focus {
@@ -402,11 +409,15 @@ h1{
   
   .app-form-button {
     background: none;
-    border: none;
+    border: inset;
+    border-radius: 26% 0%;
     color: crimson;
     font-size: 14px;
     cursor: pointer;
     outline: none;
+    font-weight: bold;
+    background: center;
+    filter: drop-shadow(2px 1px 10px white);
   }
   
   .app-form-button:hover {
@@ -416,7 +427,7 @@ h1{
     width: 30rem;
     height: 20rem;
     margin: 3rem 0rem;
-    filter: brightness(0.5);
+    filter: brightness(0.7);
     border-radius: 43px;
     /* border: 13px outset #034d7bcf; */
     
@@ -425,4 +436,37 @@ h1{
     text-align: center;
     margin: 0px;
   }
-  
+  placeholder{
+    font-weight: 600;
+  }
+  #footer{
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    /* background-image: linear-gradient(60deg,#29323c 0%,#485563 40%); */
+    background-color: #1f1e1e;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .social-icon{
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    display: flex;
+    margin-bottom: 30px;
+  }
+  .footer.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 0rem;
+    font-size: 2rem;
+  }
